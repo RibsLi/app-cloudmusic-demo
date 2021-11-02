@@ -5,3 +5,9 @@ export function getBannerData() {
     url: "/banner"
   })
 }
+
+export function getIconData() {
+  return request({
+    url: "/homepage/dragon/ball"
+  })
+}

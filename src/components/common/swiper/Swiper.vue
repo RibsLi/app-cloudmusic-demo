@@ -233,7 +233,7 @@ export default {
   overflow: hidden;
   position: relative;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .swiper {
   display: flex;
@@ -250,8 +250,8 @@ export default {
 .indi-item {
   box-sizing: border-box;
   width: 8px;
-  height: 8px;
-  border-radius: 4px;
+  height: 2px;
+  border-radius: 2px;
   background-color: #fff;
   line-height: 8px;
   text-align: center;
