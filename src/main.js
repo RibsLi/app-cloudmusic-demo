@@ -4,6 +4,5 @@ import router from "./router";
 import store from "./store";
 
 import "assets/css/main.css"
-import "common/remSize.js"
 
 createApp(App).use(store).use(router).mount("#app");
