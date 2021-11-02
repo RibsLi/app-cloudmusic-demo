@@ -1,12 +1,20 @@
 <template>
   <div class="discovery">
-    发现
+    <top-bar/>
+    <home-swiper/>
   </div>
 </template>
 
 <script>
+import TopBar from './childComps/TopBar'
+import HomeSwiper from "./childComps/HomeSwiper"
+
 export default {
-  name: "Discovery"
+  name: "Discovery",
+  components: {
+    TopBar,
+    HomeSwiper
+  }
 }
 </script>
 
