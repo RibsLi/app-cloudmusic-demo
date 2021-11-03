@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.slide {
+  padding: 10px 0 20px 0;
+}
 .top {
   display: flex;
   justify-content: space-between;

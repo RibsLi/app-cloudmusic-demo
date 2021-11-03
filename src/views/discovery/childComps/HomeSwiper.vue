@@ -33,6 +33,7 @@ export default {
 .home-swiper {
   padding: 10px 15px;
   height: 135px;
+  background-color: #fff;
   img {
     width: 100%;
     height: 100%;

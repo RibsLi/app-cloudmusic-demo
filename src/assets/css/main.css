@@ -1,3 +1,7 @@
 @import "./normalize.css";
 @import "./reset.css";
-@import "./fonts/iconfont.css"
+@import "./fonts/iconfont.css";
+
+body {
+  background-color: #eee;
+}

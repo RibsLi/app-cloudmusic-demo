@@ -29,6 +29,7 @@ export default {
 
 <style lang="less" scoped>
 .top-bar {
+  background-color: #fff;
   .top-search {
     background-color: rgb(247, 242, 242);
     height: 34px;

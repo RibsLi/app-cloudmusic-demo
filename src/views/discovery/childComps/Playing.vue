@@ -1,17 +1,17 @@
 <template>
-  <div class="recommend">
+  <div class="playing">
     <slide>
       <template v-slot:top-left>
-        推荐歌单
+        直播 · 领黑胶会员
       </template>
       <template v-slot:top-more>
         更多
         <span class="iconfont icon-jiantou1"></span>
       </template>
-      <slide-item v-for="item in recommends" :key="item">
-        <img :src="item.picUrl" alt="">
-        <span class="iconfont icon-bofang play">{{(item.playCount/10000).toFixed(1)}}万</span>
-        <div class="name">{{item.name}}</div>
+      <slide-item v-for="item in playing" :key="item">
+        <img :src="item.avatarUrl" alt="">
+        <span class="iconfont icon-bofang play">{{(item.userFollowedCount/10000).toFixed(1)}}万</span>
+        <div class="name">{{item.nickName}}</div>
       </slide-item>
     </slide>
   </div>
@@ -20,9 +20,9 @@
 <script>
 import {Slide, SlideItem} from "components/common/slide"
 export default {
-  name: "Recommend",
+  name: "Playing",
   props: {
-    recommends: {
+    playing: {
       type: Array,
       default() {
         return []
@@ -32,22 +32,15 @@ export default {
   components: {
     Slide,
     SlideItem
-  },
-  computed: {
-    // 播放次数
-    playCount() {
-      const count = this.recommends[0].playCount
-      if (count < 10000) return count;
-      return (count / 10000).toFixed(1) + "万";
-    }
   }
 }
 </script>
 
 <style lang="less" scoped>
-.recommend {
+.playing {
   background-color: #fff;
-  border-radius: 0 0 10px 10px ;
+  margin: 10px 0;
+  border-radius: 10px;
 }
 span {
   font-size: 12px;

@@ -31,6 +31,7 @@ export default {
   align-items: center;
   text-align: center;
   white-space: nowrap;
+  background-color: #fff;
   border-bottom: 1px solid #eee;
   font-size: 12px;
   // overflow: hidden;

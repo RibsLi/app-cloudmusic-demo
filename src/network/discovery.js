@@ -15,8 +15,21 @@ export function getIconData() {
 }
 
 // 发现页推荐歌单数据
-export function getRecommendData() {
+export function getRecommendData(limit) {
   return request({
-    url: "/personalized"
+    url: "/personalized",
+    params: {
+      limit
+    }
+  })
+}
+
+// 发现页电台24小时主播榜
+export function getDjData(limit) {
+  return request({
+    url: "/dj/toplist/hours",
+    params: {
+      limit
+    }
   })
 }
