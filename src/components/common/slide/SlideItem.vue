@@ -12,9 +12,14 @@ export default {
 
 <style scoped>
 .slide-item {
-  flex-shrink: 0;
-  margin-right: 25px;
-  text-align: center;
-  /* justify-content: space-between; */
+  width: 106px;
+  margin-right: 10px;
+  position: relative;
+}
+.slide-item:last-child {
+  margin-right: 0;
+}
+.slide-item img {
+  height: 106px;
 }
 </style>
